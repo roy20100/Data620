@@ -1,0 +1,23 @@
+VersaLogic Card     Number    Notes
+GA112-2             34        Six 2-input Open Collector NAND gates
+GA27-1              20        Six 4-input NAND gates (four are Open Collector)
+REG04               16
+LD312               14
+FF26                12        Six SR Flip Flops with global reset
+FF34                11
+GR26-1              11
+LR312               11
+PA24-2              09
+DS44                08
+DZ44                08
+SA44                08
+ARI01               08
+ARI02               08
+PA26                05
+RB24                03
+AD34                02
+MS01                01
+XP17                01
+MT41                01
+CI 01               01
+XC-31               01        Primary clock board, generates 2.2MHz clock
