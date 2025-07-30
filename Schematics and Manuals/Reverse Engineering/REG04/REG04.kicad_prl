@@ -5,13 +5,13 @@
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
-      "images": 0.8100000023841858,
-      "pads": 0.7699999809265137,
+      "images": 0.9100000262260437,
+      "pads": 1.0,
       "shapes": 1.0,
-      "tracks": 1.0,
+      "tracks": 0.9399999976158142,
       "vias": 1.0,
       "zones": 0.6200000047683716
     },
@@ -59,7 +59,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "demo.kicad_prl",
+    "filename": "REG04.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -88,16 +88,16 @@
       9
     ],
     "col_widths": [
-      203,
-      184,
-      114,
-      84,
-      114,
-      114,
-      114,
-      89,
-      114,
-      114
+      162,
+      147,
+      91,
+      67,
+      91,
+      91,
+      91,
+      71,
+      91,
+      91
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
