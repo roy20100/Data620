@@ -11,7 +11,7 @@ PA24-1   Uploaded
 DS44     Not yet
 DZ44     Uploaded
 SA44     Not yet
-ARI01    Uploaded   Was in progress by Usagi, but up for grabs
+ARI01    Uploaded   In progress by Grabhanem
 ARI02    Uploaded
 PA26     Not yet
 RB24     Uploaded
