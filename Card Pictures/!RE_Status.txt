@@ -1,8 +1,8 @@
 Card     Pic.       Reverse Engineer Work
 GA112-2  Uploaded   Finished by Usagi
 GA27-1   Uploaded   Finished by Usagi
-LD312    Uploaded
-REG04    Uploaded   In progress by Tom C and Roy20100
+LD312    Uploaded   In progress by x
+REG04    Uploaded   Finished by Tom C and Roy20100
 FF26     Uploaded   Finished by Usagi
 FF34     Uploaded
 GR26-1   Not yet

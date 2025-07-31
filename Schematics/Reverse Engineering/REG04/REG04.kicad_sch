@@ -2660,7 +2660,7 @@
 		)
 		(uuid "be71502f-fcbb-4d07-bf7b-301b9766d807")
 	)
-	(text "REC04"
+	(text "REG04"
 		(exclude_from_sim no)
 		(at 12.7 19.05 0)
 		(effects
