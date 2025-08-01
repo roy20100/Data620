@@ -19,8 +19,8 @@ ARI01    Uploaded   In progress by Grabhanem
 ARI02    Uploaded
 PA26     Not yet
 PA26-1   Not yet
-RB24     Uploaded   In progress by Calerin
-DM23     Uploaded
+RB24     Uploaded   Finished by Usagi
+DM23     Uploaded   In progress by Calerin
 AD34     Not yet
 MS01     Not yet
 XP17     Not yet
