@@ -1,4 +1,4 @@
-Card     Pic.       Reverse Engineer Work
+Card      Reverse Engineer Work
 GA112-2   Finished by Usagi
 GA27-1    Finished by Usagi
 LD312-1   Finished by x
