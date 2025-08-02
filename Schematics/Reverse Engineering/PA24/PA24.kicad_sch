@@ -2837,7 +2837,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "PA3"
+	(text "PA4"
 		(exclude_from_sim no)
 		(at 128.27 254 0)
 		(effects
@@ -7224,7 +7224,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 52.07 198.12 0)
 			(effects
 				(font
@@ -7378,7 +7378,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 151.13 190.5 0)
 			(effects
 				(font
@@ -7668,7 +7668,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 153.67 93.98 0)
 			(effects
 				(font
@@ -7823,7 +7823,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 346.71 190.5 0)
 			(effects
 				(font
@@ -8245,7 +8245,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 59.69 101.6 0)
 			(effects
 				(font
@@ -8400,7 +8400,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 242.57 93.98 0)
 			(effects
 				(font
@@ -8556,7 +8556,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 59.69 93.98 0)
 			(effects
 				(font
@@ -10659,7 +10659,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 64.77 190.5 0)
 			(effects
 				(font
@@ -10930,7 +10930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 345.44 101.6 0)
 			(effects
 				(font
@@ -11085,7 +11085,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 123.19 190.5 0)
 			(effects
 				(font
@@ -11524,7 +11524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 254 101.6 0)
 			(effects
 				(font
@@ -11995,7 +11995,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 52.07 182.88 0)
 			(effects
 				(font
@@ -12757,7 +12757,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 242.57 101.6 0)
 			(effects
 				(font
@@ -12913,7 +12913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 128.27 95.25 0)
 			(effects
 				(font
@@ -14307,7 +14307,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 52.07 190.5 0)
 			(effects
 				(font
@@ -15140,7 +15140,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 72.39 93.98 0)
 			(effects
 				(font
@@ -15412,7 +15412,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 316.23 102.87 0)
 			(effects
 				(font
@@ -15769,7 +15769,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 320.04 191.77 0)
 			(effects
 				(font
@@ -16260,7 +16260,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 246.38 198.12 0)
 			(effects
 				(font
@@ -16761,7 +16761,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 59.69 86.36 0)
 			(effects
 				(font
@@ -16921,7 +16921,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 259.08 190.5 0)
 			(effects
 				(font
@@ -17060,7 +17060,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 246.38 190.5 0)
 			(effects
 				(font
@@ -17148,7 +17148,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 242.57 109.22 0)
 			(effects
 				(font
@@ -17451,7 +17451,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 246.38 182.88 0)
 			(effects
 				(font
