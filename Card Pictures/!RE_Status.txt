@@ -19,10 +19,10 @@ ARI01     Finished by Grabhanem
 ARI02     Finished by Grabhanem
 PA26-1
 RB24      Finished by Usagi
-DM23      In progress by Calerin
-AD34
+DM23      Finished by Calerin
+AD34      In progress by nevets01
 MS01
-XP17
+XP17      In progress by Calerin
 MT41
 TI 01
 CI 01
