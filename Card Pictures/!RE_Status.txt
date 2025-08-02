@@ -1,0 +1,32 @@
+Card     Pic.       Reverse Engineer Work
+GA112-2  Uploaded   Finished by Usagi
+GA27-1   Uploaded   Finished by Usagi
+LD312-1  Uploaded   Finished by x
+LD312    Uploaded    
+REG04    Uploaded   Finished by Bruve273, Tom C and Roy20100
+FF26     Uploaded   Finished by Usagi
+FF34     Uploaded
+GR26-1   Uploaded
+LR312    Uploaded
+LR312-1  Not yet
+PA24     Uploaded
+PA24-1   Uploaded
+PA24-2   Not yet
+DS44     Uploaded
+DZ44     Uploaded   Finished by Bruce273 (transistor question remains)
+SA44     Uploaded
+ARI01    Uploaded   In progress by Grabhanem
+ARI02    Uploaded
+PA26     Not yet
+PA26-1   Not yet
+RB24     Uploaded   Finished by Usagi
+DM23     Uploaded   In progress by Calerin
+AD34     Not yet
+MS01     Not yet
+XP17     Not yet
+MT41     Not yet
+TI 01    Not yet
+CI 01    Not yet
+XC-31    Uploaded   Finished by Usagi
+
+FPB      Not yet    (Front Panel Button)
