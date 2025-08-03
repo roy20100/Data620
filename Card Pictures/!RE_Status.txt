@@ -5,14 +5,14 @@ LD312-1   Finished by x
 LD312     Finished by x
 REG04     Finished by Bruve273, Tom C and Roy20100
 FF26      Finished by Usagi
-FF34      In progress by robot256
+FF34      Finished by robot256
 GR26-1
 LR312     Finished by Calerin
 LR312-1
 PA24      Finished by Roy20100
-PA24-1    In progress by Roy20100
+PA24-1    Finished by Roy20100
 PA24-2
-DS44
+DS44      In progress by Sanosuke
 DZ44      Finished by Bruce273 (transistor question remains)
 SA44
 ARI01     Finished by Grabhanem
@@ -22,7 +22,7 @@ RB24      Finished by Usagi
 DM23      Finished by Calerin
 AD34      In progress by nevets01
 MS01
-XP17      In progress by Calerin
+XP17      Finished by Calerin
 MT41
 TI 01
 CI 01
