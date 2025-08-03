@@ -201,6 +201,202 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Q_PNP"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_PNP"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "PNP bipolar junction transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BJT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_PNP_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Q_PNP_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -660,10 +856,16 @@
 		(uuid "128412a9-739f-4887-97a9-7060c79cc48c")
 	)
 	(junction
+		(at 116.84 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34d517f7-90a5-4b9f-bf5c-53304e820f29")
+	)
+	(junction
 		(at 109.22 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8b596cdd-3190-44a9-bae3-7af48c981ba4")
+		(uuid "9dc9cade-babb-4183-9675-8ba23dd851f8")
 	)
 	(junction
 		(at 116.84 53.34)
@@ -696,6 +898,16 @@
 			(type default)
 		)
 		(uuid "09ad799a-f8d1-4e55-a40a-b2ae8e1ba24b")
+	)
+	(wire
+		(pts
+			(xy 116.84 64.77) (xy 116.84 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "549b72fa-e1e5-4168-96b3-db31366516a9")
 	)
 	(wire
 		(pts
@@ -776,7 +988,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00ad03ab-484f-4090-8dd3-cf3a64422258")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR04"
 			(at 109.22 73.66 0)
 			(effects
 				(font
@@ -826,7 +1038,7 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "#PWR036")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -841,7 +1053,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c5444cc-5d90-4689-90ab-a5828d913592")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR03"
 			(at 109.22 53.34 0)
 			(effects
 				(font
@@ -891,7 +1103,7 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "#PWR038")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -907,7 +1119,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fa49982-cb16-4588-b5b1-e34fc8314c1e")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR05"
 			(at 116.84 30.48 0)
 			(effects
 				(font
@@ -957,7 +1169,7 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "#PWR012")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -973,7 +1185,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4350b406-a176-47f2-89d4-44a35f1bdd74")
-		(property "Reference" "Q9"
+		(property "Reference" "Q1"
 			(at 113.03 60.96 0)
 			(effects
 				(font
@@ -1030,7 +1242,7 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "Q9")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -1045,7 +1257,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52c778ae-2363-485c-b718-81ce8f667dd7")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR02"
 			(at 109.22 45.72 0)
 			(effects
 				(font
@@ -1095,7 +1307,74 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "#PWR039")
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 116.84 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5cb71764-8732-4e99-82a2-778d3472d1f1")
+		(property "Reference" "R6"
+			(at 114.3 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 116.84 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.062 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "614c2168-b7c1-40db-a576-f43c9e998f7c")
+		)
+		(pin "2"
+			(uuid "2e2ba072-52f1-4154-9038-212a41f2ca01")
+		)
+		(instances
+			(project ""
+				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -1111,7 +1390,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78a8c201-fe60-4098-80db-db27b36a2122")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR01"
 			(at 101.6 58.42 0)
 			(effects
 				(font
@@ -1161,7 +1440,7 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "#PWR037")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -1176,7 +1455,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8f41c1ef-804f-4aee-8660-c0f0c551b267")
-		(property "Reference" "R36"
+		(property "Reference" "R1"
 			(at 104.14 57.15 90)
 			(effects
 				(font
@@ -1228,7 +1507,7 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "R36")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -1244,7 +1523,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a2bffebe-618d-409d-8d17-f83ca3104376")
-		(property "Reference" "R37"
+		(property "Reference" "R5"
 			(at 106.68 73.66 90)
 			(effects
 				(font
@@ -1296,79 +1575,7 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "R37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Q_NPN")
-		(at 114.3 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b6d27df8-ccbc-461e-860d-67df821221a5")
-		(property "Reference" "Q10"
-			(at 111.76 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_NPN"
-			(at 119.38 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "NPN bipolar junction transistor"
-			(at 114.3 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "B"
-			(uuid "77d5a08d-bc1a-48b1-951e-0d19893c5a97")
-		)
-		(pin "C"
-			(uuid "8e2ea1ad-21fa-45d8-ad69-496b6c88bb44")
-		)
-		(pin "E"
-			(uuid "94953828-ed92-476b-9bcf-7a5b777a30e6")
-		)
-		(instances
-			(project "Data620-Tester-Digital"
-				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "Q10")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -1383,7 +1590,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b7d0ba97-5b4c-41d5-b19a-f0502326a558")
-		(property "Reference" "R33"
+		(property "Reference" "R3"
 			(at 105.41 39.37 90)
 			(effects
 				(font
@@ -1435,7 +1642,7 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "R33")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -1450,7 +1657,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d2aa3e5c-82bb-4035-bb92-71dd2438897c")
-		(property "Reference" "R35"
+		(property "Reference" "R2"
 			(at 99.06 66.04 90)
 			(effects
 				(font
@@ -1502,7 +1709,80 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "R35")
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_PNP")
+		(at 114.3 41.91 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9e03821-94d8-4837-8bdd-09f264f31805")
+		(property "Reference" "Q2"
+			(at 113.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_PNP"
+			(at 119.38 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PNP bipolar junction transistor"
+			(at 114.3 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "B"
+			(uuid "cd4f6236-0b98-42bb-979c-cf39f3d9dcfd")
+		)
+		(pin "C"
+			(uuid "acc19545-ea17-42dc-8406-2bf0d8a32fd3")
+		)
+		(pin "E"
+			(uuid "082bb930-c32c-42e0-ad98-ae8c2202784e")
+		)
+		(instances
+			(project ""
+				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -1517,7 +1797,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f7587503-d471-45e3-8aa1-e19595adf46e")
-		(property "Reference" "R34"
+		(property "Reference" "R4"
 			(at 111.76 45.72 90)
 			(effects
 				(font
@@ -1569,7 +1849,72 @@
 		(instances
 			(project "Data620-Tester-Digital"
 				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
-					(reference "R34")
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-12V")
+		(at 116.84 77.47 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fafe6eb9-e079-415c-924f-b9879f4b070c")
+		(property "Reference" "#PWR06"
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-12V"
+			(at 116.84 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-12V\""
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "748ae5e4-7b77-47c6-b2ca-7fd285ad1ea6")
+		)
+		(instances
+			(project "Data620-Tester-Digital"
+				(path "/3eff4bdf-58dc-44a0-ab96-5683b3263ff4"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
