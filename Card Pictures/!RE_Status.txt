@@ -12,9 +12,9 @@ LR312-1
 PA24      Finished by Roy20100
 PA24-1    Finished by Roy20100
 PA24-2
-DS44      In progress by Sanosuke
+DS44      Finished by Sanosuke
 DZ44      Finished by Bruce273 (transistor question remains)
-SA44
+SA44      In progress by Sanosuke
 ARI01     Finished by Grabhanem
 ARI02     Finished by Grabhanem
 PA26-1
