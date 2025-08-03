@@ -2927,7 +2927,7 @@
 		)
 		(uuid "91a11dce-ca5b-4897-a3a3-3e4185a7c8ed")
 	)
-	(text "PA24"
+	(text "PA24-2"
 		(exclude_from_sim no)
 		(at 13.97 19.05 0)
 		(effects
@@ -7554,7 +7554,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPN?"
+		(property "Value" "NPN2?"
 			(at 115.57 190.5 90)
 			(effects
 				(font
@@ -8641,7 +8641,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 166.37 181.61 90)
 			(effects
 				(font
@@ -10196,7 +10196,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 316.23 115.57 90)
 			(effects
 				(font
@@ -10876,7 +10876,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 320.04 204.47 90)
 			(effects
 				(font
@@ -11149,7 +11149,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPN?"
+		(property "Value" "NPN2?"
 			(at 311.15 190.5 90)
 			(effects
 				(font
@@ -12009,7 +12009,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5.1k"
 			(at 66.04 107.95 90)
 			(effects
 				(font
@@ -13351,7 +13351,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 355.6 181.61 90)
 			(effects
 				(font
@@ -13972,7 +13972,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "18k"
 			(at 101.6 184.15 90)
 			(effects
 				(font
@@ -14108,7 +14108,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5.1k"
 			(at 252.73 204.47 90)
 			(effects
 				(font
@@ -14310,7 +14310,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "18k"
 			(at 111.76 85.09 90)
 			(effects
 				(font
@@ -14446,7 +14446,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "39k"
+		(property "Value" "18k"
 			(at 260.35 95.25 90)
 			(effects
 				(font
@@ -14602,7 +14602,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 166.37 85.09 90)
 			(effects
 				(font
@@ -14758,7 +14758,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPN?"
+		(property "Value" "NPN2?"
 			(at 123.19 93.98 90)
 			(effects
 				(font
@@ -15238,7 +15238,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "39k"
+		(property "Value" "18k"
 			(at 264.16 184.15 90)
 			(effects
 				(font
@@ -15306,7 +15306,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPN?"
+		(property "Value" "NPN2?"
 			(at 307.34 101.6 90)
 			(effects
 				(font
@@ -15654,7 +15654,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "18k"
 			(at 293.37 95.25 90)
 			(effects
 				(font
@@ -15862,7 +15862,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "39k"
+		(property "Value" "18k"
 			(at 78.74 87.63 90)
 			(effects
 				(font
@@ -16969,7 +16969,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5.1k"
 			(at 58.42 204.47 90)
 			(effects
 				(font
@@ -17325,7 +17325,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 125.73 204.47 90)
 			(effects
 				(font
@@ -17815,7 +17815,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "18k"
 			(at 297.18 184.15 90)
 			(effects
 				(font
@@ -17883,7 +17883,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5.1k"
 			(at 248.92 115.57 90)
 			(effects
 				(font
@@ -18837,7 +18837,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 130.81 107.95 90)
 			(effects
 				(font
@@ -19694,7 +19694,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "39k"
+		(property "Value" "18k"
 			(at 71.12 184.15 90)
 			(effects
 				(font
@@ -19828,7 +19828,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 355.6 92.71 90)
 			(effects
 				(font
