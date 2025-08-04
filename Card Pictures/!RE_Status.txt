@@ -23,9 +23,9 @@ DM23      Finished by Calerin
 AD34      In progress by nevets01
 MS01
 XP17      Finished by Calerin
-MT41
+MT41      Finished by Sanosuke
 TI 01     Finished by Calerin
-CI 01
+CI 01     Finished by Sanosuke
 XC-31     Finished by Usagi
 
 FPB      Not yet    (Front Panel Button)
