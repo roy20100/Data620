@@ -11,10 +11,10 @@ LR312     Finished by Calerin
 LR312-1
 PA24      Finished by Roy20100
 PA24-1    Finished by Roy20100
-PA24-2
+PA24-2    Finished by Roy20100
 DS44      Finished by Sanosuke
-DZ44      Finished by Bruce273 (transistor question remains)
-SA44      In progress by Sanosuke
+DZ44      Finished by Bruce273 (transistor question)
+SA44      Finished by Sanosuke (mystery component)
 ARI01     Finished by Grabhanem
 ARI02     Finished by Grabhanem
 PA26-1
@@ -24,7 +24,7 @@ AD34      In progress by nevets01
 MS01
 XP17      Finished by Calerin
 MT41
-TI 01     In progress by Calerin
+TI 01     Finished by Calerin
 CI 01
 XC-31     Finished by Usagi
 
