@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Logi620")(type "KiCad")(uri "${KIPRJMOD}/Logi620.pretty")(options "")(descr ""))
+)
