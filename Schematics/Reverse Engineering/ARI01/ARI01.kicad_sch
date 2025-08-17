@@ -1994,34 +1994,34 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:PNP"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Transistor_BJT:Q_PNP_EBC"
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at -2.54 7.62 0)
+				(at 5.08 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "PNP"
-				(at -2.54 5.08 0)
+			(property "Value" "Q_PNP_EBC"
+				(at 5.08 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 35.56 0 0)
+				(at 5.08 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2029,16 +2029,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-				(at 35.56 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2047,7 +2038,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "PNP"
+			(property "Description" "PNP transistor, emitter/base/collector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2056,7 +2047,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Type" "GUMMELPOON"
+			(property "ki_keywords" "BJT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2065,31 +2056,13 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=C 2=B 3=E"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PNP_0_1"
+			(symbol "Q_PNP_EBC_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
 					)
 					(stroke
-						(width 0.1524)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -2098,7 +2071,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+						(xy 0.635 1.905) (xy 0.635 -1.905)
 					)
 					(stroke
 						(width 0.508)
@@ -2122,7 +2095,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -2145,7 +2118,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778) (xy 2.286 -1.778)
+						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -2156,7 +2129,7 @@
 					)
 				)
 			)
-			(symbol "PNP_1_1"
+			(symbol "Q_PNP_EBC_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2175,7 +2148,7 @@
 						)
 					)
 				)
-				(pin open_collector line
+				(pin passive line
 					(at 2.54 5.08 270)
 					(length 2.54)
 					(name "C"
@@ -2185,7 +2158,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2193,7 +2166,7 @@
 						)
 					)
 				)
-				(pin open_emitter line
+				(pin passive line
 					(at 2.54 -5.08 90)
 					(length 2.54)
 					(name "E"
@@ -2203,7 +2176,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3969,6 +3942,16 @@
 	)
 	(wire
 		(pts
+			(xy 344.17 251.46) (xy 344.17 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e87e15f-9571-44e1-97e9-448a5ed65406")
+	)
+	(wire
+		(pts
 			(xy 266.7 226.06) (xy 266.7 237.49)
 		)
 		(stroke
@@ -4486,6 +4469,16 @@
 			(type default)
 		)
 		(uuid "4b3dad1b-0eb4-4e0d-adde-aca6a3f587ff")
+	)
+	(wire
+		(pts
+			(xy 256.54 78.74) (xy 256.54 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bb93cc5-14c6-44d9-838d-62adc741b87d")
 	)
 	(wire
 		(pts
@@ -8829,7 +8822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 250.19 114.3 0)
 			(effects
 				(font
@@ -8920,7 +8913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 48.26 134.62 0)
 			(effects
 				(font
@@ -9075,7 +9068,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 153.67 235.2548 0)
 			(effects
 				(font
@@ -9148,7 +9141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 137.16 162.56 0)
 			(effects
 				(font
@@ -9301,7 +9294,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 264.16 161.29 0)
 			(effects
 				(font
@@ -9344,7 +9337,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 161.29 158.75 0)
 		(mirror x)
 		(unit 1)
@@ -9372,8 +9365,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 196.85 158.75 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 166.37 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9381,8 +9374,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 196.85 158.75 0)
+		(property "Datasheet" "~"
+			(at 161.29 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9390,7 +9383,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 161.29 158.75 0)
 			(effects
 				(font
@@ -9540,7 +9533,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 259.08 113.3348 0)
 			(effects
 				(font
@@ -9611,7 +9604,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 144.78 157.7848 0)
 			(effects
 				(font
@@ -9682,7 +9675,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 247.142 241.3 90)
 			(effects
 				(font
@@ -9753,7 +9746,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 244.602 322.58 90)
 			(effects
 				(font
@@ -9822,7 +9815,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 257.81 304.8 0)
 			(effects
 				(font
@@ -9960,7 +9953,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 314.452 246.38 90)
 			(effects
 				(font
@@ -10033,7 +10026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 317.5 165.1 0)
 			(effects
 				(font
@@ -10258,7 +10251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 250.19 74.93 0)
 			(effects
 				(font
@@ -10415,7 +10408,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 252.73 153.67 0)
 			(effects
 				(font
@@ -10504,7 +10497,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 172.212 201.93 90)
 			(effects
 				(font
@@ -10644,7 +10637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 304.8 213.36 0)
 			(effects
 				(font
@@ -10734,7 +10727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 27.94 209.55 0)
 			(effects
 				(font
@@ -10795,7 +10788,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 161.29 115.57 0)
 		(mirror x)
 		(unit 1)
@@ -10823,8 +10816,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 196.85 115.57 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 166.37 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10832,8 +10825,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 196.85 115.57 0)
+		(property "Datasheet" "~"
+			(at 161.29 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10841,7 +10834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 161.29 115.57 0)
 			(effects
 				(font
@@ -10925,7 +10918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 252.73 157.48 0)
 			(effects
 				(font
@@ -11016,7 +11009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 252.73 213.36 0)
 			(effects
 				(font
@@ -11107,7 +11100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 250.19 118.11 0)
 			(effects
 				(font
@@ -11235,7 +11228,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 196.85 307.34 0)
 		(mirror x)
 		(unit 1)
@@ -11264,8 +11257,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 232.41 307.34 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 201.93 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11273,8 +11266,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 232.41 307.34 0)
+		(property "Datasheet" "~"
+			(at 196.85 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11282,7 +11275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 196.85 307.34 0)
 			(effects
 				(font
@@ -11432,7 +11425,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 202.692 162.56 90)
 			(effects
 				(font
@@ -11540,7 +11533,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 340.36 161.29 0)
 		(mirror x)
 		(unit 1)
@@ -11568,8 +11561,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 375.92 161.29 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 345.44 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11577,8 +11570,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 375.92 161.29 0)
+		(property "Datasheet" "~"
+			(at 340.36 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11586,7 +11579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 340.36 161.29 0)
 			(effects
 				(font
@@ -11803,7 +11796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 270.51 213.36 0)
 			(effects
 				(font
@@ -11892,7 +11885,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 189.992 322.58 90)
 			(effects
 				(font
@@ -11961,7 +11954,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 327.66 165.1 0)
 			(effects
 				(font
@@ -12101,7 +12094,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 46.99 62.23 0)
 			(effects
 				(font
@@ -12192,7 +12185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 250.19 78.74 0)
 			(effects
 				(font
@@ -12348,7 +12341,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 329.692 227.33 90)
 			(effects
 				(font
@@ -12418,7 +12411,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 215.138 322.58 90)
 			(effects
 				(font
@@ -12558,7 +12551,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 134.62 115.57 0)
 			(effects
 				(font
@@ -12649,7 +12642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 262.89 213.36 0)
 			(effects
 				(font
@@ -12736,7 +12729,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 157.48 240.03 0)
 			(effects
 				(font
@@ -12809,7 +12802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 134.62 119.38 0)
 			(effects
 				(font
@@ -12965,7 +12958,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 286.512 322.58 90)
 			(effects
 				(font
@@ -13008,7 +13001,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 110.49 64.77 0)
 		(mirror x)
 		(unit 1)
@@ -13019,7 +13012,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c44f8a1-8fad-41b3-ba39-ecbf789f0679")
 		(property "Reference" "Q3"
-			(at 115.57 66.0401 0)
+			(at 115.57 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13037,8 +13030,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 146.05 64.77 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 115.57 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13046,8 +13039,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 146.05 64.77 0)
+		(property "Datasheet" "~"
+			(at 110.49 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13055,7 +13048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 110.49 64.77 0)
 			(effects
 				(font
@@ -13205,7 +13198,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 54.102 144.78 90)
 			(effects
 				(font
@@ -13276,7 +13269,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 330.962 154.94 90)
 			(effects
 				(font
@@ -13349,7 +13342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 143.51 240.03 0)
 			(effects
 				(font
@@ -13542,7 +13535,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 171.45 236.22 0)
 		(mirror x)
 		(unit 1)
@@ -13570,8 +13563,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 207.01 236.22 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 176.53 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13579,8 +13572,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 207.01 236.22 0)
+		(property "Datasheet" "~"
+			(at 171.45 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13588,7 +13581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 171.45 236.22 0)
 			(effects
 				(font
@@ -13737,7 +13730,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 172.212 322.58 90)
 			(effects
 				(font
@@ -13809,7 +13802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 209.55 284.48 0)
 			(effects
 				(font
@@ -14097,7 +14090,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 320.802 171.45 90)
 			(effects
 				(font
@@ -14168,7 +14161,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 141.732 74.93 90)
 			(effects
 				(font
@@ -14237,7 +14230,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 198.12 172.72 0)
 			(effects
 				(font
@@ -14309,7 +14302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 213.36 284.48 0)
 			(effects
 				(font
@@ -14398,7 +14391,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 194.31 167.9448 0)
 			(effects
 				(font
@@ -14471,7 +14464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 138.43 68.58 0)
 			(effects
 				(font
@@ -14624,7 +14617,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 60.96 138.43 0)
 			(effects
 				(font
@@ -14760,7 +14753,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 320.04 232.7148 0)
 			(effects
 				(font
@@ -14829,7 +14822,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 295.91 314.96 0)
 			(effects
 				(font
@@ -14902,7 +14895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 154.94 285.75 0)
 			(effects
 				(font
@@ -14993,7 +14986,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 297.18 213.36 0)
 			(effects
 				(font
@@ -15082,7 +15075,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 131.572 316.23 90)
 			(effects
 				(font
@@ -15153,7 +15146,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 64.262 125.73 90)
 			(effects
 				(font
@@ -15357,7 +15350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 267.462 68.58 90)
 			(effects
 				(font
@@ -15494,7 +15487,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 151.892 55.88 90)
 			(effects
 				(font
@@ -15567,7 +15560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 128.27 311.15 0)
 			(effects
 				(font
@@ -15720,7 +15713,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 327.66 238.76 0)
 			(effects
 				(font
@@ -15830,7 +15823,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 309.88 309.88 0)
 		(mirror x)
 		(unit 1)
@@ -15858,8 +15851,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 345.44 309.88 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 314.96 312.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15867,8 +15860,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 345.44 309.88 0)
+		(property "Datasheet" "~"
+			(at 309.88 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15876,7 +15869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 309.88 309.88 0)
 			(effects
 				(font
@@ -16028,7 +16021,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 128.27 307.34 0)
 			(effects
 				(font
@@ -16117,7 +16110,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 80.772 318.77 90)
 			(effects
 				(font
@@ -16186,7 +16179,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 97.79 68.58 0)
 			(effects
 				(font
@@ -16255,7 +16248,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 148.59 162.56 0)
 			(effects
 				(font
@@ -16326,7 +16319,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 162.052 229.87 90)
 			(effects
 				(font
@@ -16397,7 +16390,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 257.302 168.91 90)
 			(effects
 				(font
@@ -16468,7 +16461,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 259.08 73.9648 0)
 			(effects
 				(font
@@ -16577,7 +16570,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 212.09 168.91 0)
 		(mirror x)
 		(unit 1)
@@ -16605,8 +16598,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 247.65 168.91 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 217.17 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16614,8 +16607,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 247.65 168.91 0)
+		(property "Datasheet" "~"
+			(at 212.09 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16623,7 +16616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 212.09 168.91 0)
 			(effects
 				(font
@@ -16705,7 +16698,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 345.948 247.65 90)
 			(effects
 				(font
@@ -16778,7 +16771,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 245.11 213.36 0)
 			(effects
 				(font
@@ -16869,7 +16862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 158.75 285.75 0)
 			(effects
 				(font
@@ -17092,7 +17085,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal"
 			(at 31.75 256.54 0)
 			(effects
 				(font
@@ -17164,7 +17157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 279.4 309.88 0)
 			(effects
 				(font
@@ -17322,7 +17315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 48.26 138.43 0)
 			(effects
 				(font
@@ -17411,7 +17404,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 212.852 180.34 90)
 			(effects
 				(font
@@ -17484,7 +17477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 283.21 213.36 0)
 			(effects
 				(font
@@ -17574,7 +17567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 252.73 161.29 0)
 			(effects
 				(font
@@ -17665,7 +17658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 248.92 213.36 0)
 			(effects
 				(font
@@ -17755,7 +17748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 320.04 238.76 0)
 			(effects
 				(font
@@ -17950,7 +17943,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 160.02 307.34 0)
 		(mirror x)
 		(unit 1)
@@ -17961,7 +17954,7 @@
 		(fields_autoplaced yes)
 		(uuid "89d7fffd-e030-4691-90ee-191f7dffa507")
 		(property "Reference" "Q18"
-			(at 165.1 308.6101 0)
+			(at 165.1 307.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17979,8 +17972,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 195.58 307.34 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 165.1 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17988,8 +17981,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 195.58 307.34 0)
+		(property "Datasheet" "~"
+			(at 160.02 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17997,7 +17990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 160.02 307.34 0)
 			(effects
 				(font
@@ -18080,7 +18073,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 57.15 133.6548 0)
 			(effects
 				(font
@@ -18218,7 +18211,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 140.462 125.73 90)
 			(effects
 				(font
@@ -18328,7 +18321,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 276.86 114.3 0)
 		(mirror x)
 		(unit 1)
@@ -18356,8 +18349,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 312.42 114.3 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 281.94 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18365,8 +18358,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 312.42 114.3 0)
+		(property "Datasheet" "~"
+			(at 276.86 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18374,7 +18367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 276.86 114.3 0)
 			(effects
 				(font
@@ -18457,7 +18450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 141.732 167.64 90)
 			(effects
 				(font
@@ -18567,7 +18560,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 269.24 299.72 0)
 		(mirror x)
 		(unit 1)
@@ -18578,7 +18571,7 @@
 		(fields_autoplaced yes)
 		(uuid "935b6c7a-58b2-42d8-bb99-5afeaa7e3530")
 		(property "Reference" "Q11"
-			(at 274.32 300.9901 0)
+			(at 274.32 299.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18596,8 +18589,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 304.8 299.72 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 274.32 302.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18605,8 +18598,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 304.8 299.72 0)
+		(property "Datasheet" "~"
+			(at 269.24 299.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18614,7 +18607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 269.24 299.72 0)
 			(effects
 				(font
@@ -18763,7 +18756,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 309.372 158.75 90)
 			(effects
 				(font
@@ -18832,7 +18825,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 148.59 119.38 0)
 			(effects
 				(font
@@ -18904,7 +18897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 275.59 320.04 0)
 			(effects
 				(font
@@ -18993,7 +18986,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 323.85 160.3248 0)
 			(effects
 				(font
@@ -19131,7 +19124,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 267.462 107.95 90)
 			(effects
 				(font
@@ -19332,7 +19325,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 148.59 68.58 0)
 			(effects
 				(font
@@ -19470,7 +19463,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 183.642 250.19 90)
 			(effects
 				(font
@@ -19541,7 +19534,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 55.88 57.4548 0)
 			(effects
 				(font
@@ -19612,7 +19605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 111.252 77.47 90)
 			(effects
 				(font
@@ -19655,7 +19648,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 72.39 58.42 0)
 		(mirror x)
 		(unit 1)
@@ -19666,7 +19659,7 @@
 		(fields_autoplaced yes)
 		(uuid "a32c22a3-1d7a-45f1-8d65-cb6b1ac19003")
 		(property "Reference" "Q1"
-			(at 77.47 59.6901 0)
+			(at 77.47 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19684,8 +19677,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 107.95 58.42 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 77.47 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19693,8 +19686,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 107.95 58.42 0)
+		(property "Datasheet" "~"
+			(at 72.39 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19702,7 +19695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 72.39 58.42 0)
 			(effects
 				(font
@@ -19787,7 +19780,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 287.02 213.36 0)
 			(effects
 				(font
@@ -19876,7 +19869,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 93.98 63.8048 0)
 			(effects
 				(font
@@ -19919,7 +19912,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 261.62 226.06 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19946,8 +19939,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 226.06 226.06 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 256.54 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19955,8 +19948,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 226.06 226.06 0)
+		(property "Datasheet" "~"
+			(at 261.62 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19964,7 +19957,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 261.62 226.06 0)
 			(effects
 				(font
@@ -20048,7 +20041,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 312.42 322.58 0)
 			(effects
 				(font
@@ -20135,7 +20128,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 262.89 78.74 0)
 			(effects
 				(font
@@ -20273,7 +20266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 153.162 322.58 90)
 			(effects
 				(font
@@ -20413,7 +20406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 128.27 303.53 0)
 			(effects
 				(font
@@ -20503,7 +20496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 27.94 194.31 0)
 			(effects
 				(font
@@ -20661,7 +20654,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 173.99 285.75 0)
 			(effects
 				(font
@@ -20750,7 +20743,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 189.992 179.07 90)
 			(effects
 				(font
@@ -20927,7 +20920,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 243.84 226.06 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20954,8 +20947,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 208.28 226.06 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 238.76 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20963,8 +20956,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 208.28 226.06 0)
+		(property "Datasheet" "~"
+			(at 243.84 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20972,7 +20965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 243.84 226.06 0)
 			(effects
 				(font
@@ -21055,7 +21048,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 101.092 55.88 90)
 			(effects
 				(font
@@ -21098,7 +21091,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 140.97 307.34 0)
 		(mirror x)
 		(unit 1)
@@ -21109,7 +21102,7 @@
 		(fields_autoplaced yes)
 		(uuid "b0fe30d7-868a-48b4-a57c-295169230c33")
 		(property "Reference" "Q19"
-			(at 146.05 308.6101 0)
+			(at 146.05 307.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21127,8 +21120,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 176.53 307.34 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 146.05 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21136,8 +21129,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 176.53 307.34 0)
+		(property "Datasheet" "~"
+			(at 140.97 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21145,7 +21138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 140.97 307.34 0)
 			(effects
 				(font
@@ -21228,7 +21221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 341.122 177.8 90)
 			(effects
 				(font
@@ -21338,7 +21331,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 278.13 226.06 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21365,8 +21358,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 242.57 226.06 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 273.05 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21374,8 +21367,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 242.57 226.06 0)
+		(property "Datasheet" "~"
+			(at 278.13 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21383,7 +21376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 278.13 226.06 0)
 			(effects
 				(font
@@ -21535,7 +21528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 195.58 285.75 0)
 			(effects
 				(font
@@ -21626,7 +21619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 86.36 68.58 0)
 			(effects
 				(font
@@ -21715,7 +21708,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 259.842 293.37 90)
 			(effects
 				(font
@@ -21758,7 +21751,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 218.44 307.34 0)
 		(mirror x)
 		(unit 1)
@@ -21786,8 +21779,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 254 307.34 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 223.52 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21795,8 +21788,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 254 307.34 0)
+		(property "Datasheet" "~"
+			(at 218.44 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21804,7 +21797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 218.44 307.34 0)
 			(effects
 				(font
@@ -21887,7 +21880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 151.892 106.68 90)
 			(effects
 				(font
@@ -21930,7 +21923,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 179.07 307.34 0)
 		(mirror x)
 		(unit 1)
@@ -21941,7 +21934,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba8f0091-36f8-4f20-9bbd-b570ad1e1af3")
 		(property "Reference" "Q17"
-			(at 184.15 308.6101 0)
+			(at 184.15 307.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21959,8 +21952,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 214.63 307.34 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 184.15 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21968,8 +21961,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 214.63 307.34 0)
+		(property "Datasheet" "~"
+			(at 179.07 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21977,7 +21970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 179.07 307.34 0)
 			(effects
 				(font
@@ -22032,6 +22025,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:-12V")
+		(at 256.54 88.9 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "baa45989-912e-4c34-96b2-255c194128b0")
+		(property "Reference" "#PWR076"
+			(at 256.54 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-12V"
+			(at 256.54 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-12V\""
+			(at 256.54 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c33ea1c-14a3-47ed-a45a-5077742ecc5a")
+		)
+		(instances
+			(project "ARI01"
+				(path "/f51c7135-0e36-43b2-ae27-ed556c89e1ef"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
 		(at 191.77 285.75 270)
 		(mirror x)
@@ -22062,7 +22122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 191.77 285.75 0)
 			(effects
 				(font
@@ -22285,7 +22345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 27.94 201.93 0)
 			(effects
 				(font
@@ -22508,7 +22568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
 			(at 250.19 304.8 0)
 			(effects
 				(font
@@ -22597,7 +22657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal"
 			(at 309.372 171.45 90)
 			(effects
 				(font
@@ -22668,7 +22728,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 264.922 241.3 90)
 			(effects
 				(font
@@ -22739,7 +22799,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 90.932 74.93 90)
 			(effects
 				(font
@@ -22812,7 +22872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 185.42 168.91 0)
 			(effects
 				(font
@@ -22901,7 +22961,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal"
 			(at 33.02 201.93 0)
 			(effects
 				(font
@@ -22972,7 +23032,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 254.762 124.46 90)
 			(effects
 				(font
@@ -23015,7 +23075,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 161.29 64.77 0)
 		(mirror x)
 		(unit 1)
@@ -23026,7 +23086,7 @@
 		(fields_autoplaced yes)
 		(uuid "c35c907b-4375-41db-b80c-1b862aedac70")
 		(property "Reference" "Q4"
-			(at 166.37 66.0401 0)
+			(at 166.37 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23044,8 +23104,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 196.85 64.77 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 166.37 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23053,8 +23113,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 196.85 64.77 0)
+		(property "Datasheet" "~"
+			(at 161.29 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23062,7 +23122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 161.29 64.77 0)
 			(effects
 				(font
@@ -23211,7 +23271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 217.17 284.48 0)
 			(effects
 				(font
@@ -23367,7 +23427,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 144.78 63.8048 0)
 			(effects
 				(font
@@ -23438,7 +23498,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 299.212 241.3 90)
 			(effects
 				(font
@@ -23481,7 +23541,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 73.66 134.62 0)
 		(mirror x)
 		(unit 1)
@@ -23509,8 +23569,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 109.22 134.62 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 78.74 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23518,8 +23578,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 109.22 134.62 0)
+		(property "Datasheet" "~"
+			(at 73.66 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23527,7 +23587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 73.66 134.62 0)
 			(effects
 				(font
@@ -23674,7 +23734,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 262.89 118.11 0)
 			(effects
 				(font
@@ -23745,7 +23805,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal"
 			(at 31.75 276.86 0)
 			(effects
 				(font
@@ -23788,7 +23848,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 295.91 226.06 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23815,8 +23875,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 260.35 226.06 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 290.83 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23824,8 +23884,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 260.35 226.06 0)
+		(property "Datasheet" "~"
+			(at 295.91 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23833,7 +23893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 295.91 226.06 0)
 			(effects
 				(font
@@ -23882,6 +23942,77 @@
 			(project "ARI01"
 				(path "/f51c7135-0e36-43b2-ae27-ed556c89e1ef"
 					(reference "Q21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 256.54 85.09 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce66b3ca-de75-4b60-845c-7c20ea1ca33f")
+		(property "Reference" "R50"
+			(at 259.08 86.3601 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 256.54 83.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
+			(at 254.762 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 256.54 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "72ed7496-ff34-4361-8399-08ca8a93f5af")
+		)
+		(pin "1"
+			(uuid "c8963f01-adca-4346-92fe-06a8fbbc2c2f")
+		)
+		(instances
+			(project "ARI01"
+				(path "/f51c7135-0e36-43b2-ae27-ed556c89e1ef"
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -23985,7 +24116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 137.16 158.75 0)
 			(effects
 				(font
@@ -24076,7 +24207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 266.7 213.36 0)
 			(effects
 				(font
@@ -24165,7 +24296,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 270.002 320.04 90)
 			(effects
 				(font
@@ -24238,7 +24369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 177.8 285.75 0)
 			(effects
 				(font
@@ -24327,7 +24458,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 260.35 156.5148 0)
 			(effects
 				(font
@@ -24398,7 +24529,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 151.892 149.86 90)
 			(effects
 				(font
@@ -24667,7 +24798,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 292.1 308.9148 0)
 			(effects
 				(font
@@ -24807,7 +24938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 279.4 213.36 0)
 			(effects
 				(font
@@ -24896,7 +25027,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 144.78 114.6048 0)
 			(effects
 				(font
@@ -24965,7 +25096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:ELCO 40"
 			(at 80.01 393.7 0)
 			(effects
 				(font
@@ -25148,7 +25279,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
 			(at 59.69 62.23 0)
 			(effects
 				(font
@@ -25421,7 +25552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 46.99 58.42 0)
 			(effects
 				(font
@@ -25644,7 +25775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 281.432 241.3 90)
 			(effects
 				(font
@@ -25781,7 +25912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 34.798 224.79 90)
 			(effects
 				(font
@@ -25824,7 +25955,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 341.63 233.68 0)
 		(mirror x)
 		(unit 1)
@@ -25852,8 +25983,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 377.19 233.68 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 346.71 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25861,8 +25992,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 377.19 233.68 0)
+		(property "Datasheet" "~"
+			(at 341.63 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25870,7 +26001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 341.63 233.68 0)
 			(effects
 				(font
@@ -25953,7 +26084,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 62.992 49.53 90)
 			(effects
 				(font
@@ -26026,7 +26157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 300.99 213.36 0)
 			(effects
 				(font
@@ -26117,7 +26248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P12.70mm_Horizontal"
 			(at 138.43 64.77 0)
 			(effects
 				(font
@@ -26206,7 +26337,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 51.562 68.58 90)
 			(effects
 				(font
@@ -26343,7 +26474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 			(at 250.19 298.7548 0)
 			(effects
 				(font
@@ -26481,7 +26612,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 300.482 303.53 90)
 			(effects
 				(font
@@ -26591,7 +26722,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 276.86 157.48 0)
 		(mirror x)
 		(unit 1)
@@ -26619,8 +26750,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 312.42 157.48 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 281.94 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26628,8 +26759,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 312.42 157.48 0)
+		(property "Datasheet" "~"
+			(at 276.86 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26637,7 +26768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 276.86 157.48 0)
 			(effects
 				(font
@@ -26720,7 +26851,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 267.462 151.13 90)
 			(effects
 				(font
@@ -26790,7 +26921,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Logi620:R_Axial_DIN0207_L6.3mm_D2.5mm_P12.70mm_Horizontal"
 			(at 152.908 251.46 90)
 			(effects
 				(font
@@ -26899,7 +27030,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
+		(lib_id "Transistor_BJT:Q_PNP_EBC")
 		(at 276.86 74.93 0)
 		(mirror x)
 		(unit 1)
@@ -26927,8 +27058,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 312.42 74.93 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-5-3"
+			(at 281.94 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26936,8 +27067,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 312.42 74.93 0)
+		(property "Datasheet" "~"
+			(at 276.86 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26945,7 +27076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 276.86 74.93 0)
 			(effects
 				(font
